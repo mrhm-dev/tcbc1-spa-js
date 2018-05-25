@@ -4,3 +4,7 @@ import './index.css'
 import $ from 'jquery'
 import popper from 'popper.js'
 import bootstrap from 'bootstrap'
+
+import { createPost } from './posts'
+
+document.querySelector('#allPosts').appendChild(createPost())
