@@ -10,6 +10,8 @@ module.exports = {
         publicPath: '/dist'
     },
 
+    mode: 'development',
+
     module: {
         rules: [
             {

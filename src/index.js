@@ -1,9 +1,4 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './index.css'
-
-import $ from 'jquery'
-import popper from 'popper.js'
-import bootstrap from 'bootstrap'
 
 import { createPost } from './posts'
 import { select, create } from './util'
@@ -50,7 +45,8 @@ window.onload = function() {
         nameField.value = ''
         contentField.value = ''
 
-        createPost(postObject)
+        let parents = select('#allPosts')
+        parents.appendChild(createPost(postObject))
     })
 
 

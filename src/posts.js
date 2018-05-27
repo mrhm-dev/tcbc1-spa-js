@@ -6,8 +6,10 @@ import { create } from './util'
 
 export function createPost(postObject) {
 
-    // let mainPostDiv = create({'class': 'card mt-2'})
-    // let cardBody = create({'class': 'card-body'})
+    let mainPostDiv = create({'class': 'card mt-2'})
+    let cardBody = create({'class': 'card-body'})
+
+    cardBody.innerHTML = postObject.content || ''
 
     // let postTopSection = createPostTopSection()
     // cardBody.appendChild(postTopSection)
@@ -18,10 +20,9 @@ export function createPost(postObject) {
     // let postReactionSection = createPostReactionSection()
     // cardBody.appendChild(postReactionSection)
 
-    // mainPostDiv.appendChild(cardBody)
-    // return mainPostDiv    
+    mainPostDiv.appendChild(cardBody)
+    return mainPostDiv    
 
-    console.log('Hello', postObject)
 
 }
 
