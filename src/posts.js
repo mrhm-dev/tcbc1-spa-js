@@ -1,20 +1,27 @@
 
 import { creatCommentDisplaySection, createLikeCommentBtnSection, createNewCommentSection } from './comment'
 
-export const createPost = postObject => {
 
-    let mainPostDiv = document.createElement('div')
+import { create } from './util'
 
-    let postTopSection = createPostTopSection()
-    mainPostDiv.appendChild(postTopSection)
+export function createPost(postObject) {
 
-    let postContentSection = createPostContentSection()
-    mainPostDiv.appendChild(postContentSection)
+    // let mainPostDiv = create({'class': 'card mt-2'})
+    // let cardBody = create({'class': 'card-body'})
 
-    let postReactionSection = createPostReactionSection()
-    mainPostDiv.appendChild(postReactionSection)
+    // let postTopSection = createPostTopSection()
+    // cardBody.appendChild(postTopSection)
 
-    return mainPostDiv    
+    // let postContentSection = createPostContentSection()
+    // cardBody.appendChild(postContentSection)
+
+    // let postReactionSection = createPostReactionSection()
+    // cardBody.appendChild(postReactionSection)
+
+    // mainPostDiv.appendChild(cardBody)
+    // return mainPostDiv    
+
+    console.log('Hello', postObject)
 
 }
 
